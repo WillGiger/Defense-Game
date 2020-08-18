@@ -6,13 +6,15 @@ namespace TreehouseDefense
         public static void Main()
         {
             Map map = new Map(8,5);
+            //debugging tools 
+            try 
+            {
+                MapLocation mapLocation = new MapLocation(20,20, map);
 
-            Point point = new Point(4,2);
-            
-            Console.WriteLine(point.DistanceTo(3,4));
-
-
-
+            } catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
 
 
