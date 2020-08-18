@@ -3,7 +3,7 @@ namespace TreehouseDefense
     class Level
     {
         private readonly Invader[] _invaders;
-        public Tower[] towers {get; set;}
+        public Tower[] Towers {get; set;}
 
         public Level(Invader[] invaders)
         {
@@ -20,7 +20,7 @@ namespace TreehouseDefense
             while(remainingInvaders>0)
             {
                 //each tower fires on all the invaders
-                foreach(Tower tower in towers)
+                foreach(Tower tower in Towers)
                 {
                     tower.FireOnInvaders(_invaders);
                 }
