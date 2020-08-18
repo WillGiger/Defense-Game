@@ -5,7 +5,7 @@ namespace TreehouseDefense
         private readonly Path _path;
         private int _pathStep = 0;
 
-        public int Health {get; private set;} = 100;
+        public int Health {get; private set;} = 2;
 
         public bool IsNeutralized => Health <= 0;
         public bool IsActive => !(IsNeutralized || HasScored);
