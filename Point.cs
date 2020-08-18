@@ -1,3 +1,4 @@
+using System;
 namespace TreehouseDefense
 {
 
@@ -11,6 +12,20 @@ namespace TreehouseDefense
             X = x;
             Y = y;
         }
+
+        public int DistanceTo(int x, int y)
+        {
+            return (int)Math.Sqrt(Math.Pow((X-x),2)
+            +Math.Pow((Y-y),2));
+        }
+
+        //overloaded method to allow point 
+        public int DistanceTo(Point point)
+        {
+            return DistanceTo(point.X, point.Y);
+        }
+
+
 
 
 

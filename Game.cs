@@ -1,3 +1,4 @@
+using System;
 namespace TreehouseDefense
 {
     class Game
@@ -5,6 +6,12 @@ namespace TreehouseDefense
         public static void Main()
         {
             Map map = new Map(8,5);
+
+            Point point = new Point(4,2);
+            
+            Console.WriteLine(point.DistanceTo(3,4));
+
+
 
 
 
